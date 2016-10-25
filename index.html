@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <link rel="stylesheet" type="text/css" href="css/reset.css">  
+   <link rel="stylesheet" type="text/css" href="css/index.css">
+   <link rel="stylesheet" type="text/css" href="css/foot.css">
+	<title></title>    
+</head> 
+<script type="text/javascript" language ="javascript">
+		var image;
+		var current=0;
+		var images= new Array(7);
+		//定义变量timerID用于保存定时器的id
+		var timerID;
+        function init(){
+        	for (var i=0;i<images.length;i++) {
+        		images[i]=new Image(300,300);
+        		images[i].src="img/"+i+".jpg";
+        	}
+        	image = document.images[0];
+        }
+        function setSrc(i){
+           current = i;
+           image.src=images[i].src;
+        }
+        function next(){
+        	if(current>=4){
+        		return false;
+        	}
+        	else{
+        		current++;
+        		setSrc(current);
+        	}
+        }
+	</script>
+
+	<body>
+  <!-- 顶部蒙版开始  灰色背景-->
+      <div class="top">
+          <div class="top_pic">
+               <a href=""> <img src="img/title.png" > </a>
+          </div>
+          <div class="top_nav">
+                <a href="#HOME" class="active">HOME</a>
+                <a href="#WORK">WORK</a>
+                <a href="#CONTACT">CONTACT</a>
+                <a href="jionus.html">JOIN US</a>          
+          </div>
+      </div>
+  <!-- 顶部蒙版结束-->
+	     <div class="header">
+	  <!--<body onload="init()">
+	     	
+	      <p>
+	      	 <div align="center">
+	         <img src="image/0.jpg" class="header_img"/>
+	      	 </div>
+	      </p>
+	       <form id="form1" name="form1" method="post" action="">
+	      	   <input type="button" name="submit1" value="上一张" onclick="setSrc(0)"/>
+	           <input type="button" name="submit2" value="下一张" onclick="next()"/>
+	           
+	      </form>
+      </body>-->
+
+           <a href="" name="#HOME"><img src="img/timo.jpg" class="header_img" ></a>
+            <div class="dot_total">
+                   <ul class="dot">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                   </ul>
+            </div>  
+            <p  class="header_p">          
+               Infini Studio (映纷创意)是一家创意机构，专注于动画影像的创意与设计。我们使用设计、绘画、动画、特效及多种创新形式(Motion Graphics)，以动态视觉语言对品牌与内容进行创意呈现。并由动画导演、设计师、插画师、三维艺术家共同协作完成。服务的领域包括广告、影视、交互H5、新媒体等。
+           </p>  
+
+            <div class="middle_pic">
+                <ul>
+                  <li><a href=""><img src="img/1.jpg"></a></li>
+                  <li><a href=""><img src="img/2.jpg"></a></li>
+                  <li><a href=""><img src="img/3.jpg"></a></li>
+                  <li><a href=""><img src="img/4.jpg"></a></li>
+                  <li><a href=""><img src="img/5.jpg"></a></li>
+                  <li><a href=""><img src="img/6.jpg"></a></li>
+                  <li><a href=""><img src="img/7.jpg"></a></li>
+                  <li><a href=""><img src="img/8.jpg"></a></li>
+                  <li><a href=""><img src="img/9.jpg"></a></li>
+                  <li><a href=""><img src="img/10.jpg"></a></li>
+                  <li><a href=""><img src="img/11.jpg"></a></li> 
+                  <li><a href=""><img src="img/9.jpg"></a></li>
+                  <li><a href=""><img src="img/10.jpg"></a></li>
+                  <li><a href=""><img src="img/11.jpg"></a></li> 
+                </ul>
+            </div>
+              <div class="total_pic">
+		               <div class="main_pic">
+			               	     <a href="" name="#WORK"><img src="img/yasuo.jpg"></a>
+			               	     <a href="" class="font_style" )"><strong>疾风剑豪</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <span class="music">
+		                                  <audio class="tiao" src="music/en_US.mp3" controls="controls" >  
+		                                  </audio>
+                                  <!-- autoplay="autoplay" 自动播放 -->
+                                     </span>
+		                               <p class="wnagyi_font">亚索<p>死亡如风常伴无声</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/p2.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>未来媒体峰会</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">媒体<p>未来媒体峰会</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/p3.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>大德玛</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">盖伦<p>别怕我来了</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/p4.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>笑啥毛</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">泥煤<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic5.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>买菜吃去</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>我手机坏了</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic6.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>科比布莱恩特</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">NBA<p>姚明麦迪</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic7.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>勒布朗James</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>小皇帝詹姆斯</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/p8.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>大鲨鱼</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">大鲨鱼<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic9.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>闪电侠韦德</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>闪电侠韦德</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic10.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>林旋风</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic11.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic12.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic13.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic14.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic15.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic16.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic17.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic18.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic14.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic15.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic16.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic17.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic18.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic19.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic20.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic21.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic22.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href="" name="#CONTACT"><img src="img/pic23.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" >
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic24.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic25.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href="" name="#CONTACT"><img src="img/pic29.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" >
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic26.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href=""><img src="img/pic27.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" name="WORK">
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>
+			             </div>
+			             <div class="main_pic">
+			               	     <a href="" name="#CONTACT"><img src="img/pic28.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" >
+		                           <div class="hover_effct">
+		                               <p class="wnagyi_font">网易<p>网易520礼包H5</p></p> 
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             <div class="main_pic">
+			               	     <a href="" name="#CONTACT"><img src="img/pic28.jpg"></a>
+			               	     <a href="" class="font_style" ><strong>网易520礼包</strong> </a>
+		                         <a href="" >
+		                           <div class="hover_effct">
+		                              <span class="music">
+		                                  <audio class="tiao" src="music/xr.mp3" controls="controls" >  
+		                                  </audio>
+                                  <!-- autoplay="autoplay" 自动播放 -->
+                                     </span>
+		                           </div>             				                     
+		                         </a>  
+			             </div>
+			             
+			             
+               </div>
+
+	          <div class="footer">
+				<div class="footer_left">
+					<div class="link">
+						<a href="" class="link1" ><img src="img/contact1.jpg" ></a>
+						<a href="" class="link2"><img src="img/contact2.jpg" ></a>
+						<a href="" class="link3"><img src="img/contact3.jpg" ></a>
+					</div>
+				</div>
+				<div class="footer_right">
+					<div class="contact">
+						<div class="contact_logo"><img src="img/footer_logo.jpg" ></div>
+						<p>北京市朝阳北路36号亚宝时代大厦</p>
+						<p>Email : infinistu@gmail.com</p>
+						<p>QQ : 7585917</p>
+						<p>Tel : (+86)18610994852</p>
+						<p>weibo : @InfiniStudio</p>
+					</div>
+				</div>
+			</div>
+      
+</body>
+</html>
